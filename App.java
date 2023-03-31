@@ -1,4 +1,4 @@
-package GRUPO;
+package AvaliacaoGrupo;
 
 public class App {
     public static void main(String[] args) {

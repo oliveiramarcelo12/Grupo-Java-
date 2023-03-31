@@ -1,10 +1,11 @@
-package GRUPO;
+package AvaliacaoGrupo;
 
 import java.util.Scanner;
 
 public class Imc {
+    Scanner sc = new Scanner(System.in);
     public void Exercicio1() {
-        Scanner sc = new Scanner(System.in);
+      
         System.out.println("digite seu nome");
         String nome = sc.nextLine();
         System.out.println("digite sua idade");
@@ -23,7 +24,7 @@ public class Imc {
         } else {
             pesoIdeal = (72.7 * altura) - 58;
         }
-        double peso = pesoReal- (pesoIdeal) ;
+        double peso = pesoReal - (pesoIdeal);
         if (peso > 0) {
             System.out.println(nome + " Precisa Perder" + peso + "Kg");
 
@@ -42,7 +43,7 @@ public class Imc {
         } else if (iMC >= 20 && iMC <= 27) {
             System.out.println("peso moderado");
 
-        } else  {
+        } else {
             System.out.println("perder peso");
 
         }
@@ -51,13 +52,16 @@ public class Imc {
             System.out.println("Sugestão de Atividades: musculação moderada,musculação leve, luta, dança,ioga ");
 
         } else if (Idade >= 25 && Idade <= 35) {
-            System.out.println("Sugestão de Atividades: musculação intensa,musculação moderada, luta, dança,ioga,corrida ");
+            System.out.println(
+                    "Sugestão de Atividades: musculação intensa,musculação moderada, luta, dança,ioga,corrida ");
 
         } else if (Idade >= 36 && Idade <= 45) {
-            System.out.println("Sugestão de Atividades: musculação intensa,musculação moderada, luta, dança,ioga,corrida ");
+            System.out.println(
+                    "Sugestão de Atividades: musculação intensa,musculação moderada, luta, dança,ioga,corrida ");
 
         } else if (Idade >= 46 && Idade <= 55) {
-            System.out.println("Sugestão de Atividades:musculação moderada,musculação leve, luta, dança,ioga,corrida,pilates ");
+            System.out.println(
+                    "Sugestão de Atividades:musculação moderada,musculação leve, luta, dança,ioga,corrida,pilates ");
 
         } else if (Idade >= 56 && Idade <= 65) {
             System.out.println("Sugestão de Atividades:musculação leve, dança,ioga,corrida,pilates ");
